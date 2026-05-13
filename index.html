@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yu 出國旅遊大全</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 16px 60px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+    }
+
+    /* 頭像區 */
+    .profile {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.8);
+      margin-bottom: 14px;
+      background: linear-gradient(135deg, #f6d365, #fda085);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .profile h1 {
+      color: #fff;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .profile p {
+      color: rgba(255,255,255,0.85);
+      font-size: 14px;
+      margin-top: 6px;
+      line-height: 1.5;
+    }
+
+    /* 連結按鈕 */
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 16px;
+      padding: 16px 20px;
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .link-btn:hover {
+      background: rgba(255,255,255,0.28);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+
+    .link-btn:active {
+      transform: translateY(0);
+    }
+
+    .link-icon {
+      font-size: 28px;
+      margin-right: 16px;
+      flex-shrink: 0;
+    }
+
+    .link-text {
+      flex: 1;
+    }
+
+    .link-title {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    .link-desc {
+      font-size: 12px;
+      color: rgba(255,255,255,0.75);
+      margin-top: 3px;
+    }
+
+    .link-arrow {
+      font-size: 18px;
+      opacity: 0.7;
+    }
+
+    /* 分隔線 */
+    .divider {
+      text-align: center;
+      color: rgba(255,255,255,0.5);
+      font-size: 12px;
+      margin: 8px 0 4px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* 底部 */
+    .footer {
+      text-align: center;
+      margin-top: 36px;
+      color: rgba(255,255,255,0.5);
+      font-size: 12px;
+    }
+
+    /* 點擊追蹤提示 */
+    .badge {
+      background: rgba(255,200,0,0.25);
+      border: 1px solid rgba(255,200,0,0.5);
+      color: #ffe066;
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 20px;
+      margin-left: 8px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- 個人資料 -->
+    <div class="profile">
+      <div class="avatar">✈️</div>
+      <h1>Yu 出國旅遊大全</h1>
+      <p>幫你找最便宜的機票＆旅遊優惠<br>日本 🗾 韓國 🇰🇷 泰國 🇹🇭 東南亞</p>
+    </div>
+
+    <!-- 連結列表 -->
+    <div class="links">
+
+      <div class="divider">✨ 限時優惠</div>
+
+      <!-- Klook -->
+      <a class="link-btn" href="https://affiliate.klook.com/redirect?aid=121163&aff_adid=1276621&k_site=https%3A%2F%2Fwww.klook.com%2F" target="_blank" rel="noopener">
+        <span class="link-icon">🎫</span>
+        <div class="link-text">
+          <div class="link-title">Klook 旅遊活動優惠 <span class="badge">最新</span></div>
+          <div class="link-desc">門票、交通、體驗一次搞定</div>
+        </div>
+        <span class="link-arrow">›</span>
+      </a>
+
+      <!-- KKday -->
+      <a class="link-btn" href="https://www.kkday.com/?cid=25041" target="_blank" rel="noopener">
+        <span class="link-icon">🗺️</span>
+        <div class="link-text">
+          <div class="link-title">KKday 旅遊體驗特價</div>
+          <div class="link-desc">台灣團隊，中文客服，安心訂</div>
+        </div>
+        <span class="link-arrow">›</span>
+      </a>
+
+      <div class="divider">✈️ 機票比價</div>
+
+      <!-- Skyscanner -->
+      <a class="link-btn" href="https://www.skyscanner.com.tw" target="_blank" rel="noopener">
+        <span class="link-icon">🔍</span>
+        <div class="link-text">
+          <div class="link-title">Skyscanner 機票比價</div>
+          <div class="link-desc">比較所有航空，找最低票價</div>
+        </div>
+        <span class="link-arrow">›</span>
+      </a>
+
+      <!-- Trip.com -->
+      <a class="link-btn" href="https://www.trip.com/t/1vZkBdFMVq3" target="_blank" rel="noopener">
+        <span class="link-icon">🏨</span>
+        <div class="link-text">
+          <div class="link-title">Trip.com 機票＋飯店</div>
+          <div class="link-desc">訂機票送飯店折扣，超划算</div>
+        </div>
+        <span class="link-arrow">›</span>
+      </a>
+
+      <div class="divider">📱 追蹤我</div>
+
+      <!-- Instagram -->
+      <a class="link-btn" href="https://www.instagram.com/taiwan.travel.deals" target="_blank" rel="noopener">
+        <span class="link-icon">📸</span>
+        <div class="link-text">
+          <div class="link-title">Instagram @taiwan.travel.deals</div>
+          <div class="link-desc">每天特價資訊＋旅遊攻略</div>
+        </div>
+        <span class="link-arrow">›</span>
+      </a>
+
+    </div>
+
+    <div class="footer">© 2025 Yu 出國旅遊大全</div>
+  </div>
+</body>
+</html>
